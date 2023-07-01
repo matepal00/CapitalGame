@@ -1,5 +1,5 @@
 import { ComponentType, Suspense } from "react";
-import Loader from "./Loader";
+import Loader from "../Loader";
 
 export interface ComponentLoaderProps {
   component: ComponentType<any>;

@@ -7,7 +7,7 @@ import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  base: "/app/",
+  base: "/app/choose-continent",
   plugins: [
     react(),
     createHtmlPlugin(),

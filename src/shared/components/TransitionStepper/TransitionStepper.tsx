@@ -1,6 +1,7 @@
 import { Fade } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import { ComponentType, ReactNode, useCallback, useState } from "react";
+import { StyledDiv } from "./TransitionStepper.styles";
 
 export interface TransitionStepperProps<
   Transition = ComponentType<
@@ -22,13 +23,14 @@ const TransitionStepper = ({
   }, [activeStep]);
   return (
     <>
-      {Object.entries(steps).map(([step, component]) => {
-        mountedStep === step && (
-          <Transition key={step} in={activeStep === step} onExit={handleExit}>
-            <>{component}</>
-          </Transition>
-        );
-      })}
+      {Object.entries(steps).map(
+        ([step, component]) =>
+          mountedStep === step && (
+            <Transition key={step} in={activeStep === step} onExit={handleExit}>
+              <StyledDiv>{component}</StyledDiv>
+            </Transition>
+          )
+      )}
     </>
   );
 };

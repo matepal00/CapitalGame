@@ -10,4 +10,5 @@ export enum Continents {
   Africa = "africa",
   Asia = "asia",
   Oceania = "oceania",
+  AllContinents = "all-continents",
 }

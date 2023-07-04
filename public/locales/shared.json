@@ -1,0 +1,19 @@
+{
+    "chooseContinent":{
+        "title": "Choose Continent To Play The Game!"
+    },
+    "game":{
+        "title": "Let's start playing!",
+        "subtitle": "Currently guessing capitals for {{continent}} countries",
+        "guessTheCapital":"Tell me the capital of: {{country}}",
+        "changeContinent":"You can change continent here!",
+        "wrongAnswears":"Wrong answears count: {{count}}",
+        "correctAnswears":"Correct answears count: {{count}}",
+        "countriesLeft":"Countries left: {{count}}",
+        "dialog":{
+            "result": "Results",
+            "resultMessage": "You got {{correct}} right answears out of {{overall}}",
+            "close": "Close"
+        }
+    }
+}

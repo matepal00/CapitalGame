@@ -26,7 +26,7 @@ export interface CountriesFormValues {
 const defaultValues: CountriesFormValues = {
   [CountriesFormField.Capital]: "",
 };
-const navigate = useNavigate();
+
 export const useValidationSchema = (): ObjectSchema<CountriesFormValues> => {
   return object()
     .shape({
@@ -45,6 +45,7 @@ export const useFormProps = () => {
   });
 };
 export const useDialog = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState<boolean>(false);
   const handleDialogClose = () => {
     setOpen(false);
